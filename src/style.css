@@ -7,10 +7,6 @@
   flex-direction: column;
 }
 
-.pageTitle {
-  
-}
-
 .partTitle_text {
   margin-top: 0;
   margin-bottom: 0;
@@ -32,10 +28,6 @@
   justify-content: space-between;
   padding-left: 0.5em;
   padding-right: 0.5em;
-}
-
-.partTitle_text {
-
 }
 
 .refresh_button {
@@ -63,22 +55,20 @@
 }
 
 .peer {
-  background-color: inherit!important;
+  background-color: inherit !important;
 }
 
 .odd {
-  background-color: #DDDDDD!important ;
+  background-color: #ddd !important;
 }
 
-.scoreAdd{
+.scoreAdd {
   display: flex;
   flex-direction: column;
-  
 }
 
 .form_title {
   text-align: center;
-  
 }
 
 .form_input {
@@ -88,8 +78,7 @@
   font-family: inherit !important;
   margin-bottom: 1em;
   padding: 0.25em;
-  font-family: inherit!important;
-  font-size: medium
+  font-size: medium;
 }
 
 .form_input:focus {
@@ -98,11 +87,11 @@
   font-family: inherit;
 }
 
-.submit_button{
+.submit_button {
   width: 100px;
   border: 2px solid black;
   box-shadow: black 5px 5px 2px;
-  background-color: inherit!important;
+  background-color: inherit !important;
   margin-left: auto;
   font-family: inherit;
   font-size: medium;
