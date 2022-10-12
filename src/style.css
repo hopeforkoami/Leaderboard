@@ -1,0 +1,110 @@
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle {
+  
+}
+
+.partTitle_text {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mainSection {
+  display: flex;
+}
+
+.scores {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 40%;
+}
+
+.partTitle {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.partTitle_text {
+
+}
+
+.refresh_button {
+  border: 2px solid black;
+  box-shadow: black 5px 5px 2px;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.score_list_content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  border: 2px solid black;
+}
+
+.scoreList_content_element {
+  list-style: none;
+  padding-left: 0.25em;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  font-weight: bold;
+}
+
+.peer {
+  background-color: inherit!important;
+}
+
+.odd {
+  background-color: #DDDDDD!important ;
+}
+
+.scoreAdd{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.form_title {
+  text-align: center;
+  
+}
+
+.form_input {
+  border: 2px solid black;
+  width: inherit;
+  color: black;
+  font-family: inherit !important;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  font-family: inherit!important;
+  font-size: medium
+}
+
+.form_input:focus {
+  outline: none !important;
+  color: inherit;
+  font-family: inherit;
+}
+
+.submit_button{
+  width: 100px;
+  border: 2px solid black;
+  box-shadow: black 5px 5px 2px;
+  background-color: inherit!important;
+  margin-left: auto;
+  font-family: inherit;
+  font-size: medium;
+  font-weight: bold;
+}
