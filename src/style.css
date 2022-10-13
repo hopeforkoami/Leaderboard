@@ -39,6 +39,12 @@
   font-weight: bold;
 }
 
+.refresh_button:hover{
+  box-shadow: rgb(65, 61, 61) 5px 5px 2px;
+  color: white;
+  background-color: black!important;
+}
+
 .score_list_content {
   display: flex;
   flex-direction: column;
@@ -96,4 +102,10 @@
   font-family: inherit;
   font-size: medium;
   font-weight: bold;
+}
+
+.submit_button:hover{
+  color: white;
+  background-color: black!important;
+  box-shadow: rgb(65, 61, 61) 5px 5px 2px;
 }

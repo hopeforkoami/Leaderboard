@@ -9,6 +9,13 @@ export default class Game {
     this.id = JSON.parse(localStorage.getItem('gameID')) || ''
     this.api = new Service();
   }
+  generateContent = () => {
+    let content = '';
+    this.scores.forEach((score, index) => {
+      content += score.renderLi(index);
+    });
+    return content;
+  }
   loadGameData= async()=>{
     if(!(this.id.length>0)){
       try{
@@ -24,7 +31,13 @@ export default class Game {
     else{
       const rep = await this.api.loadGameData(this.id)
       console.log("here is the game id "+this.id)
-      this.scores = rep.result
+      if(rep.result.length>0){
+        this.scores = []
+        rep.result.forEach((score,index)=>{
+          this.scores.push(new Score(index,score.user,score.score))
+        })
+      }
+      return this.generateContent()
     }
   }
   generateId = () => {
@@ -37,16 +50,14 @@ export default class Game {
     
   }
 
-  add = (name, score) => {
-    this.scores.push(new Score(this.generateId(), name, score));
-    this.api.addNewScore(this.id,name, score)
+  add = async(name, score) => {
+    this.loadGameData()
+    await this.api.addNewScore(this.id,name, score).then((response)=>{
+      return true
+    })
+    
   }
 
-  generateContent = () => {
-    let content = '';
-    this.scores.forEach((score, index) => {
-      content += score.renderLi(index);
-    });
-    return content;
-  }
+  
+
 }
