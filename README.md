@@ -12,15 +12,6 @@ In this repository I will set up a JavaScript project for the Leaderboard list a
 
 Check the live demo [github](https://hopeforkoami.github.io/Leaderboard/dist/)👈
 
-
-## Getting Started
-To get a local copy up and running follow these simple example steps.
-
-**This is the Baptist Youth National Conference Website**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
     Web Browser (e.g. Firefox, Chrome, Edge)
 
