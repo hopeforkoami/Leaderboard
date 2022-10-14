@@ -1,3 +1,10 @@
+
+:root {
+  --style-color:#1E6FCB;
+  --border-color:#1E6FCB;
+  --shadow-color: #6AA1E0;
+  --ul-list-color:#8fb7e5;
+}
 .container {
   width: 100%;
   height: 100%;
@@ -5,6 +12,10 @@
   padding: 1.5em;
   display: flex;
   flex-direction: column;
+}
+
+.pageTitle {
+  color: var(--style-color);
 }
 
 .partTitle_text {
@@ -28,28 +39,30 @@
   justify-content: space-between;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  color: var(--style-color);
 }
 
 .refresh_button {
-  border: 2px solid black;
-  box-shadow: black 5px 5px 2px;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-color) 5px 5px 2px;
   background-color: inherit;
   font-family: inherit;
   font-size: medium;
   font-weight: bold;
+  color: var(--style-color);
 }
 
 .refresh_button:hover {
-  box-shadow: rgb(65, 61, 61) 5px 5px 2px;
+  box-shadow: var(--shadow-color) 5px 5px 2px;
   color: white;
-  background-color: black !important;
+  background-color: var(--style-color) !important;
 }
 
 .score_list_content {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
 }
 
 .scoreList_content_element {
@@ -65,7 +78,7 @@
 }
 
 .odd {
-  background-color: #ddd !important;
+  background-color: var(--ul-list-color)!important;
 }
 
 .scoreAdd {
@@ -75,10 +88,11 @@
 
 .form_title {
   text-align: center;
+  color: var(--style-color);
 }
 
 .form_input {
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   width: inherit;
   color: black;
   font-family: inherit !important;
@@ -95,17 +109,18 @@
 
 .submit_button {
   width: 100px;
-  border: 2px solid black;
-  box-shadow: black 5px 5px 2px;
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-color) 5px 5px 2px;
   background-color: inherit !important;
   margin-left: auto;
   font-family: inherit;
   font-size: medium;
   font-weight: bold;
+  color: var(--style-color);
 }
 
 .submit_button:hover {
   color: white;
-  background-color: black !important;
-  box-shadow: rgb(65, 61, 61) 5px 5px 2px;
+  background-color: var(--style-color) !important;
+  box-shadow: var(--shadow-color) 5px 5px 2px;
 }
